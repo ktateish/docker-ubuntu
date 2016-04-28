@@ -7,7 +7,17 @@ RUN apt-get update && \
     	openssh-client \
     	netcat \
 	curl \
-	vim
+	vim \
+	man-db \
+	dnsutils \
+	gcc \
+	g++ \
+	make \
+	automake \
+	autoconf \
+	libtool \
+	pkg-config \
+    && apt-get clean
 
 ADD docker-entry.sh /
 
